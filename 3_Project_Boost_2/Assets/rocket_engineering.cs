@@ -58,10 +58,10 @@ public class rocket_engineering : MonoBehaviour
                 break;
 
             default:
-                // state = State.Dying;
+                state = State.Dying;
                 audioSource.Stop();
                 audioSource.PlayOneShot(deathSound);
-                //Invoke("LoadSameLevel", 1f);
+                Invoke("LoadSameLevel", 1f);
                 break;
         }
     }
